@@ -1,0 +1,67 @@
+{
+  "id": "FoundryVTT-dnd5e-CN",
+  "title": "DnD5e Chinese Translation (Deutsch)",
+  "description": "Chinese language support for the D&amp;D5e system",
+  "authors": [
+    {
+      "name": "mhilbrunner",
+      "url": "https://github.com/mhilbrunner",
+      "flags": {}
+    }
+  ],
+  "url": "https://github.com/mhilbrunner/foundryvtt-dnd5e-lang-de",
+  "manifest": "https://github.com/mhilbrunner/foundryvtt-dnd5e-lang-de/releases/latest/download/module.json",
+  "download": "https://github.com/mhilbrunner/foundryvtt-dnd5e-lang-de/releases/download/2.3.2/module.zip",
+  "version": "2.3.2",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "11"
+  },
+  "esmodules": [
+    "dnd5e-cn.js"
+  ],
+  "styles": [
+    "styles/modesto-font-fix.css"
+  ],
+  "languages": [
+    {
+      "lang": "cn",
+      "name": "中文",
+      "path": "languages/cn.json",
+      "flags": {}
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "manifest": "https://raw.githubusercontent.com/foundryvtt/dnd5e/master/system.json",
+        "compatibility": {
+          "minimum": "2.2.2",
+          "verified": "2.3.0"
+        }
+      }
+    ],
+    "recommends": [
+      {
+        "id": "lib-wrapper",
+        "type": "module",
+        "reason": "Without libWrapper, some small details like ordinals aren't translated.",
+        "compatibility": {}
+      },
+      {
+        "id": "babele",
+        "type": "module",
+        "reason": "Without Babele, compendium content isn't translated.",
+        "compatibility": {}
+      },
+      {
+        "id": "metric-ruler-labels",
+        "type": "module",
+        "reason": "Allows to display metric and imperial units on rulers and templates at the same time.",
+        "compatibility": {}
+      }
+    ]
+  }
+}
